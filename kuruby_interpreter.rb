@@ -49,8 +49,10 @@ class Lexer
                         _value += 1
                     when 'I'
                         _value += 2
-                    when 'G'
+                    when 'g'
                         _value += 10
+                    when 'G'
+                        _value += 50
                     end
                 }
          
@@ -130,7 +132,7 @@ def out(*args)
 end
 
 def numbered_char(int)
-    return (64+int).chr
+    return int.chr
 end
 
 if __FILE__ == $0
